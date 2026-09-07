@@ -6,11 +6,10 @@ while True:
         name=input('enter expence name:')
         exp=int(input('enter expence amount:'))
         list.append((name, exp))
-
-
     elif a==2:
         print('view expence')
-        print(list)
+        for name, exp in list:
+            print(name, exp)
     elif a==3:
         print('delete expence')
     elif a==4:
