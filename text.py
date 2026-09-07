@@ -1,6 +1,6 @@
 list=[]
 while True:
-    a=int(input('1= add expence, 2= view expence, 3= delete expence, 4= exit: '))
+    a=int(input('1= add expence, 2= view expence, 3= delete expence, 4= exit: ,5= total expence'))
     if a==1:
         print('add expence')
         name=input('enter expence name:')
@@ -17,3 +17,7 @@ while True:
     elif a==4:
         print('bye')
         break
+    elif a==5:
+            print('total expence')
+            total=sum(e for n,e in list)
+            print(total)
