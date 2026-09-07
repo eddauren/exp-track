@@ -15,5 +15,5 @@ while True:
         name=input('enter expence name to delete:')
         list=[(n,e) for n,e in list if n!=name]
     elif a==4:
-        print('bye') mistake
+        print('bye')
         break
